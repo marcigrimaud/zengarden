@@ -304,18 +304,27 @@ xButtons
 -------------------------------- */
 
 .btn {
-	border: none;
+	border: 4px outset $color-4;
 	box-shadow: none;
 	border-radius: .25em;
 	font: {
 		size: 1.4rem;
 		family: $secondary-font;
 	}
-	color: $color-5;
+	color: $color-3;
+    text-shadow: -1px 1px 2px black, 1px 1px 2px black, 1px -1px 0 black, -1px -1px 0 black;
 	padding: .6em 2.2em;
 	cursor: pointer;
 	background: $color-1;
-
+    
+    &:hover {
+        box-shadow: -2px 2px 5px 0px #888888;
+    }
+    
+    &:active {
+        border: 4px inset $color-4;
+    }
+    
 	&:focus {
 		outline: none;
 	}
@@ -326,7 +335,7 @@ xButtons
 
 	&.btn-success {
 		background: $success;
-
+//I have no idea where .no-touch is and what the purpose of it is?
 		.no-touch &:hover {
 			background: lighten($success, 5%);
 		}
@@ -341,9 +350,9 @@ xButtons
 	}
 
 	&.btn-outline {
-		color: $color-1;
+		color: $color-3;
 		background: transparent;
-		box-shadow: inset 0 0 0 1px $color-1;
+		box-shadow: outset 0 0 0 1px $color-4;
 
 		.no-touch &:hover {
 			color: $color-5;
@@ -358,7 +367,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
 	/* CSS class name color */ 
-	color: $color-1;
+	color: $color-3;
 }
 
 /* -------------------------------- 
