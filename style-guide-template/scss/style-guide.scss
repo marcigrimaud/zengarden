@@ -153,13 +153,19 @@ header {
 	}
 }
 
+.cd-primary-box h3,.cd-secondary-box h3, .cd-other-box h3 {               padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .cd-primary-nav {
     background-color: $color-1;
     padding: 10px;
+    padding-top: 10px;
     border-color: $color-1;
     border: 1px;
     border-radius: 1em;
-    display: inline-block;
+    
+    li {display: inline;}
     
     li a {
 			color: $color-3;
@@ -177,6 +183,15 @@ header {
 }
 
 .cd-secondary-nav {
+    background-color: $color-1;
+    padding: 10px;
+    padding-top: 10px;
+    border-color: $color-1;
+    border: 1px;
+    border-radius: 1em;
+    
+    li {display: inline;}
+    
     li a {
 			color: $color-8;
             padding: 10px;
@@ -192,7 +207,7 @@ header {
     }
 }
 
-.cd-other-box {
+.cd-other-links {
     li a {
 			color: $color-7;
             padding: 10px;
