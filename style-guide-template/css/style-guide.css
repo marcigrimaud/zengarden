@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Galindo|K2D");
 @import url("https://fonts.googleapis.com/css?family=K2D");
+main {
+  background: white; }
+
 /* -------------------------------- 
 
 xBackground 
@@ -28,6 +31,9 @@ xPatterns
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px; }
 
+#logo, #logo2 {
+  background: #240047; }
+
 /* -------------------------------- 
 
 xNavigation 
@@ -39,10 +45,13 @@ header {
 .cd-logo {
   /* logo box style */
   background-color: #240047;
-  width: 120px; }
+  width: 70px;
+  max-width: 100px;
+  padding-top: 5px;
+  padding-left: 10px; }
   @media only screen and (min-width: 1024px) {
     .cd-logo {
-      width: 180px; } }
+      width: 120px; } }
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
@@ -55,7 +64,7 @@ header {
       color: #F1A930; }
       .cd-main-nav li a.selected {
         color: #F1A930;
-        box-shadow: 0 2px 0 #240047; }
+        box-shadow: 0 2px 0 #ffffff; }
       .no-touch .cd-main-nav li a:hover {
         color: #1C0021;
         background: #ffffff;
@@ -100,6 +109,34 @@ main > h1 {
     main > h1 {
       /* title goes into the header on big devices */
       color: #283C00; } }
+
+.cd-primary-nav {
+  background-color: #240047;
+  padding: 10px; }
+  .cd-primary-nav li a {
+    color: #F1A930;
+    padding: 10px; }
+    .cd-primary-nav li a.selected {
+      color: #F1A930; }
+    .no-touch .cd-primary-nav li a:hover {
+      color: #ffffff;
+      padding: 10px; }
+
+.cd-secondary-nav li a {
+  color: #FECC6D;
+  padding: 10px; }
+  .cd-secondary-nav li a.selected {
+    color: #FECC6D; }
+  .no-touch .cd-secondary-nav li a:hover {
+    color: #ffffff;
+    padding: 10px; }
+
+.cd-other-box li a {
+  color: #64997D;
+  padding: 10px; }
+  .no-touch .cd-other-box li a:hover {
+    color: #283C00;
+    padding: 10px; }
 
 /* -------------------------------- 
 
@@ -627,6 +664,7 @@ section {
     section {
       width: 48%;
       float: left;
+      background: white;
       margin: 0 4% 4em 0; }
       section:nth-of-type(2n) {
         margin-right: 0; } }
@@ -662,6 +700,7 @@ section {
   .cd-branding .cd-box {
     width: 49%;
     float: left;
+    background: white;
     margin: 0 2% 2em 0; }
     .cd-branding .cd-box:nth-of-type(2n) {
       margin-right: 0; }
@@ -675,6 +714,7 @@ section {
   text-align: center;
   width: 48%;
   float: left;
+  background: white;
   margin: 0 4% 1em 0; }
   .cd-colors li:nth-of-type(2n) {
     margin-right: 0; }
@@ -730,6 +770,7 @@ section {
   .cd-colors li {
     width: 19%;
     float: left;
+    background: white;
     margin: 0 1.25% 1em 0; }
     .cd-colors li:nth-of-type(2n) {
       margin-right: 1.25%; }
@@ -773,21 +814,21 @@ section {
   background-repeat: no-repeat;
   margin: 1em; }
 .cd-icons .cd-icon-1 {
-  background-image: url("../assets/icons/icon-1.svg"); }
+  background-image: url("../assets/icons/astronaut-ingravity.svg"); }
 .cd-icons .cd-icon-2 {
-  background-image: url("../assets/icons/icon-2.svg"); }
+  background-image: url("../assets/icons/worldwide.svg"); }
 .cd-icons .cd-icon-3 {
-  background-image: url("../assets/icons/icon-3.svg"); }
+  background-image: url("../assets/icons/rocket-launch.svg"); }
 .cd-icons .cd-icon-4 {
-  background-image: url("../assets/icons/icon-4.svg"); }
+  background-image: url("../assets/icons/rocket-ship.svg"); }
 .cd-icons .cd-icon-5 {
-  background-image: url("../assets/icons/icon-5.svg"); }
+  background-image: url("../assets/icons/saturn.svg"); }
 .cd-icons .cd-icon-6 {
-  background-image: url("../assets/icons/icon-6.svg"); }
+  background-image: url("../assets/icons/space.svg"); }
 .cd-icons .cd-icon-7 {
-  background-image: url("../assets/icons/icon-7.svg"); }
+  background-image: url("../assets/icons/3star.svg"); }
 .cd-icons .cd-icon-8 {
-  background-image: url("../assets/icons/icon-8.svg"); }
+  background-image: url("../assets/icons/star.svg"); }
 
 /* xForm section - basic style */
 .cd-form input[type=text],

@@ -23,5 +23,8 @@ $L:     1600px;
 @mixin column($percentage, $float-direction:left) {
   width: 100% * $percentage;
   float: $float-direction;
+    
+    background: white;
 }
 
+main {background: white;}
