@@ -98,21 +98,13 @@ header {
       /* right arrow color */
       border-color: #F1A930; }
 
-/* -------------------------------- 
-
-xPage title 
-
--------------------------------- */
-main > h1 {
-  color: #1C0021; }
-  @media only screen and (min-width: 1600px) {
-    main > h1 {
-      /* title goes into the header on big devices */
-      color: #283C00; } }
-
 .cd-primary-nav {
   background-color: #240047;
-  padding: 10px; }
+  padding: 10px;
+  border-color: #240047;
+  border: 1px;
+  border-radius: 1em;
+  display: inline-block; }
   .cd-primary-nav li a {
     color: #F1A930;
     padding: 10px; }
@@ -137,6 +129,18 @@ main > h1 {
   .no-touch .cd-other-box li a:hover {
     color: #283C00;
     padding: 10px; }
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+main > h1 {
+  color: #1C0021; }
+  @media only screen and (min-width: 1600px) {
+    main > h1 {
+      /* title goes into the header on big devices */
+      color: #283C00; } }
 
 /* -------------------------------- 
 
