@@ -320,7 +320,7 @@ xButtons
 
 	&.btn-success {
 		background: $success;
-
+//I have no idea where .no-touch is and what the purpose of it is?
 		.no-touch &:hover {
 			background: lighten($success, 5%);
 		}
