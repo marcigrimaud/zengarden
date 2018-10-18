@@ -153,15 +153,20 @@ xButtons
 
 -------------------------------- */
 .btn {
-  border: none;
+  border: 4px outset #ED8F45;
   box-shadow: none;
   border-radius: .25em;
   font-size: 1.4rem;
   font-family: "Galindo", cursive;
-  color: #283C00;
+  color: #F1A930;
+  text-shadow: -1px 1px 2px black, 1px 1px 2px black, 1px -1px 0 black, -1px -1px 0 black;
   padding: .6em 2.2em;
   cursor: pointer;
   background: #240047; }
+  .btn:hover {
+    box-shadow: -2px 2px 5px 0px #888888; }
+  .btn:active {
+    border: 4px inset #ED8F45; }
   .btn:focus {
     outline: none; }
   .no-touch .btn:hover {
@@ -175,9 +180,9 @@ xButtons
     .no-touch .btn.btn-alert:hover {
       background: #ff1a1a; }
   .btn.btn-outline {
-    color: #240047;
+    color: #F1A930;
     background: transparent;
-    box-shadow: inset 0 0 0 1px #240047; }
+    box-shadow: outset 0 0 0 1px #ED8F45; }
     .no-touch .btn.btn-outline:hover {
       color: #283C00;
       background: #240047; }
@@ -187,7 +192,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #240047; }
+  color: #F1A930; }
 
 /* -------------------------------- 
 
