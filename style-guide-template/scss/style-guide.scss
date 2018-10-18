@@ -153,24 +153,13 @@ header {
 	}
 }
 
-/* -------------------------------- 
-
-xPage title 
-
--------------------------------- */
-
-main > h1 {
-	color: $color-2;
-
-	@include MQ(L) {
-		/* title goes into the header on big devices */
-		color: $color-5;
-	}
-}
-
 .cd-primary-nav {
     background-color: $color-1;
     padding: 10px;
+    border-color: $color-1;
+    border: 1px;
+    border-radius: 1em;
+    display: inline-block;
     
     li a {
 			color: $color-3;
@@ -215,6 +204,25 @@ main > h1 {
     }
 }
 
+
+
+
+
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+
+main > h1 {
+	color: $color-2;
+
+	@include MQ(L) {
+		/* title goes into the header on big devices */
+		color: $color-5;
+	}
+}
 
 /* -------------------------------- 
 
