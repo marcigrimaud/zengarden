@@ -13,6 +13,7 @@ $color-3: #F1A930; // Link/Header - Golden Pineapple
 $color-4: #ED8F45; // Other Link - Ripe Pineapple
 $color-5: #283C00; // - Unripe Green
 $color-6: #ffffff; // Background for boxes - white 
+$color-7: #64997D; //Light Green
 
 // additional colors
 
@@ -71,10 +72,14 @@ header {
 .cd-logo {
 	/* logo box style */
 	background-color: $color-1;
-	width: 120px;
-
+	width: 70px;
+    max-width: 100px;
+    
+    padding-top: 5px;
+    padding-left: 10px;
+        
 	@include MQ(M) {
-		width: 180px;
+		width: 120px;
 	}
 }
 
@@ -93,7 +98,7 @@ header {
 
 			&.selected {
 				color: $color-3;
-				box-shadow: 0 2px 0 $color-1;
+				box-shadow: 0 2px 0 $color-6;
 			}
 
 			.no-touch &:hover {
@@ -161,6 +166,32 @@ main > h1 {
 		color: $color-5;
 	}
 }
+
+#navigation .cd-box {
+    background-color: $color-1;
+}
+
+.cd-primary-nav {
+    li a {
+			color: $color-3;
+            padding: 10px;
+        
+			&.selected {
+				color: $color-3;
+			}
+
+			.no-touch &:hover {
+				color: $color-6;
+                padding: 10px;
+			}
+    }
+}
+
+
+
+#navigation .cd-box h3 { color: $color-6;}
+
+
 
 /* -------------------------------- 
 
@@ -413,5 +444,7 @@ select {
 	cursor: pointer;
 	@include appearance(none);
 }
+
+
 
 @import 'partials/basic-style';

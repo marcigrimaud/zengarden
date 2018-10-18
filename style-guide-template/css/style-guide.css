@@ -45,10 +45,13 @@ header {
 .cd-logo {
   /* logo box style */
   background-color: #240047;
-  width: 120px; }
+  width: 70px;
+  max-width: 100px;
+  padding-top: 5px;
+  padding-left: 10px; }
   @media only screen and (min-width: 1024px) {
     .cd-logo {
-      width: 180px; } }
+      width: 120px; } }
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
@@ -61,7 +64,7 @@ header {
       color: #F1A930; }
       .cd-main-nav li a.selected {
         color: #F1A930;
-        box-shadow: 0 2px 0 #240047; }
+        box-shadow: 0 2px 0 #ffffff; }
       .no-touch .cd-main-nav li a:hover {
         color: #1C0021;
         background: #ffffff;
@@ -106,6 +109,21 @@ main > h1 {
     main > h1 {
       /* title goes into the header on big devices */
       color: #283C00; } }
+
+#navigation .cd-box {
+  background-color: #240047; }
+
+.cd-primary-nav li a {
+  color: #F1A930;
+  padding: 10px; }
+  .cd-primary-nav li a.selected {
+    color: #F1A930; }
+  .no-touch .cd-primary-nav li a:hover {
+    color: #ffffff;
+    padding: 10px; }
+
+#navigation .cd-box h3 {
+  color: #ffffff; }
 
 /* -------------------------------- 
 
@@ -778,21 +796,21 @@ section {
   background-repeat: no-repeat;
   margin: 1em; }
 .cd-icons .cd-icon-1 {
-  background-image: url("../assets/icons/icon-1.svg"); }
+  background-image: url("../assets/icons/astronaut-ingravity.svg"); }
 .cd-icons .cd-icon-2 {
-  background-image: url("../assets/icons/icon-2.svg"); }
+  background-image: url("../assets/icons/worldwide.svg"); }
 .cd-icons .cd-icon-3 {
-  background-image: url("../assets/icons/icon-3.svg"); }
+  background-image: url("../assets/icons/rocket-launch.svg"); }
 .cd-icons .cd-icon-4 {
-  background-image: url("../assets/icons/icon-4.svg"); }
+  background-image: url("../assets/icons/rocket-ship.svg"); }
 .cd-icons .cd-icon-5 {
-  background-image: url("../assets/icons/icon-5.svg"); }
+  background-image: url("../assets/icons/saturn.svg"); }
 .cd-icons .cd-icon-6 {
-  background-image: url("../assets/icons/icon-6.svg"); }
+  background-image: url("../assets/icons/space.svg"); }
 .cd-icons .cd-icon-7 {
-  background-image: url("../assets/icons/icon-7.svg"); }
+  background-image: url("../assets/icons/3star.svg"); }
 .cd-icons .cd-icon-8 {
-  background-image: url("../assets/icons/icon-8.svg"); }
+  background-image: url("../assets/icons/star.svg"); }
 
 /* xForm section - basic style */
 .cd-form input[type=text],
