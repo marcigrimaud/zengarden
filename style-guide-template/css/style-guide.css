@@ -46,45 +46,48 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #1C0021; }
+  background: #ffffff; }
   .cd-main-nav li a {
-    color: #283C00;
-    border-color: #32003b; }
+    color: #F1A930;
+    border-color: #3e007a; }
   @media only screen and (min-width: 1024px) {
     .cd-main-nav li a {
-      color: #c900ed; }
+      color: #F1A930; }
       .cd-main-nav li a.selected {
-        color: #283C00;
+        color: #F1A930;
         box-shadow: 0 2px 0 #240047; }
       .no-touch .cd-main-nav li a:hover {
-        color: #283C00; } }
+        color: #1C0021;
+        background: #ffffff;
+        padding: 30px; } }
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #283C00; }
+  background-color: #ffffff; }
   .cd-nav-trigger span::before, .cd-nav-trigger span::after {
     /* upper and lower lines */
-    background-color: #283C00; }
+    background-color: #ffffff; }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(40, 60, 0, 0); }
+  background-color: rgba(28, 0, 33, 0); }
   .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
     /* preserve visibility of upper and lower lines - close icon */
-    background-color: #283c00; }
+    background-color: #1c0021; }
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #470054; }
+  background-color: white; }
   .no-touch .cd-download:hover {
-    background-color: #5d006e; }
+    background-color: #f4b98b; }
   .cd-download span {
     /* tooltip */
-    background: #240047;
-    color: #283C00; }
+    background: #ffffff;
+    color: #283C00;
+    border-color: #F1A930; }
     .cd-download span::before {
       /* right arrow color */
-      border-color: #240047; }
+      border-color: #F1A930; }
 
 /* -------------------------------- 
 
