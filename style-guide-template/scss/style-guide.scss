@@ -14,6 +14,7 @@ $color-4: #ED8F45; // Other Link - Ripe Pineapple
 $color-5: #283C00; // - Unripe Green
 $color-6: #ffffff; // Background for boxes - white 
 $color-7: #64997D; //Light Green
+$color-8: #FECC6D; //Light Yellow
 
 // additional colors
 
@@ -167,11 +168,10 @@ main > h1 {
 	}
 }
 
-#navigation .cd-box {
-    background-color: $color-1;
-}
-
 .cd-primary-nav {
+    background-color: $color-1;
+    padding: 10px;
+    
     li a {
 			color: $color-3;
             padding: 10px;
@@ -187,10 +187,33 @@ main > h1 {
     }
 }
 
+.cd-secondary-nav {
+    li a {
+			color: $color-8;
+            padding: 10px;
+        
+			&.selected {
+				color: $color-8;
+			}
 
+			.no-touch &:hover {
+				color: $color-6;
+                padding: 10px;
+			}
+    }
+}
 
-#navigation .cd-box h3 { color: $color-6;}
-
+.cd-other-box {
+    li a {
+			color: $color-7;
+            padding: 10px;
+        
+			.no-touch &:hover {
+				color: $color-5;
+                padding: 10px;
+			}
+    }
+}
 
 
 /* -------------------------------- 
