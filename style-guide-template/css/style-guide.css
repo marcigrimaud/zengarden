@@ -207,7 +207,7 @@ xForm
 input[type=text], select {
   border: 1px solid #ED8F45;
   border-radius: .25em;
-  background: #283C00; }
+  background: #ffffff; }
   input[type=text]:focus, select:focus {
     outline: none; }
 
