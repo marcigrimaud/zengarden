@@ -649,3 +649,11 @@ section {
 .no-csstransitions .cd-select::after {
 	display: none;
 }
+
+/* Wireframe section - basic style */
+.cd-box figure figcaption{ text-align: center;}
+#wireframes img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
