@@ -1,0 +1,158 @@
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+
+header {
+	background-color: $color-2;
+}
+
+.cd-logo {
+	/* logo box style */
+	background-color: $color-1;
+	width: 70px;
+    max-width: 100px;
+    
+    padding-top: 5px;
+    padding-left: 10px;
+        
+	@include MQ(M) {
+		width: 120px;
+	}
+}
+
+.cd-main-nav {
+	/* main navigation background color - full screen on small devices */
+	background: $color-6;
+
+	li a {
+		color: $color-3;
+		border-color: lighten($color-1, 10%);
+	}
+
+	@include MQ(M) {
+		li a {
+			color: $color-3;
+
+			&.selected {
+				color: $color-3;
+				box-shadow: 0 2px 0 $color-6;
+			}
+
+			.no-touch &:hover {
+				color: $color-2;
+                background: $color-6;
+                padding: 30px; 
+			}
+		}
+	}
+}
+
+.cd-nav-trigger span {
+	/* hamburger menu */
+	background-color: $color-6;
+
+	&::before,
+	&::after {
+		/* upper and lower lines */
+		background-color: $color-6;
+	}
+}
+
+.nav-is-visible .cd-nav-trigger span {
+	/* hide line in the center on mobile when nav is visible */
+	background-color: rgba($color-2, 0);
+
+	&::before, &::after {
+		/* preserve visibility of upper and lower lines - close icon */
+		background-color: rgba($color-2, 1);
+	}
+}
+
+.cd-download {
+	/* download button top-right visible on big devices */
+	background-color: lighten($color-6, 10%);
+
+	.no-touch &:hover {
+		background-color: lighten($color-4, 15%);
+	}
+
+	span {
+		/* tooltip */
+		background: $color-6;
+		color: $color-5;
+        border-color: $color-3;
+
+		&::before {
+			/* right arrow color */
+			border-color: $color-3;
+		}
+	}
+}
+
+.cd-primary-box h3,.cd-secondary-box h3, .cd-other-box h3 {               padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cd-primary-nav {
+    background-color: $color-1;
+    padding: 10px;
+    padding-top: 10px;
+    border-color: $color-1;
+    border: 1px;
+    border-radius: 1em;
+    
+    li {display: inline;}
+    
+    li a {
+			color: $color-3;
+            padding: 10px;
+        
+			&.selected {
+				color: $color-3;
+			}
+
+			.no-touch &:hover {
+				color: $color-6;
+                padding: 10px;
+			}
+    }
+}
+
+.cd-secondary-nav {
+    background-color: $color-1;
+    padding: 10px;
+    padding-top: 10px;
+    border-color: $color-1;
+    border: 1px;
+    border-radius: 1em;
+    
+    li {display: inline;}
+    
+    li a {
+			color: $color-8;
+            padding: 10px;
+        
+			&.selected {
+				color: $color-8;
+			}
+
+			.no-touch &:hover {
+				color: $color-6;
+                padding: 10px;
+			}
+    }
+}
+
+.cd-other-links {
+    li a {
+			color: $color-7;
+            padding: 10px;
+        
+			.no-touch &:hover {
+				color: $color-5;
+                padding: 10px;
+			}
+    }
+}

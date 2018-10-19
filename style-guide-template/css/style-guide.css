@@ -39,9 +39,6 @@ xPatterns
 xNavigation 
 
 -------------------------------- */
-header {
-  background-color: #1C0021; }
-
 .cd-logo {
   /* logo box style */
   background-color: #240047;
@@ -53,9 +50,12 @@ header {
     .cd-logo {
       width: 120px; } }
 
+header {
+  background-color: #240047; }
+
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #ffffff; }
+  background-color: #240047; }
   .cd-main-nav li a {
     color: #F1A930;
     border-color: #3e007a; }

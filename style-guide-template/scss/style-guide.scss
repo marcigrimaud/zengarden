@@ -66,10 +66,6 @@ xNavigation
 
 -------------------------------- */
 
-header {
-	background-color: $color-2;
-}
-
 .cd-logo {
 	/* logo box style */
 	background-color: $color-1;
@@ -84,9 +80,13 @@ header {
 	}
 }
 
+header {
+	background-color: $color-1;
+}
+
 .cd-main-nav {
 	/* main navigation background color - full screen on small devices */
-	background: $color-6;
+	background-color: $color-1;
 
 	li a {
 		color: $color-3;
@@ -218,10 +218,6 @@ header {
 			}
     }
 }
-
-
-
-
 
 
 /* -------------------------------- 
