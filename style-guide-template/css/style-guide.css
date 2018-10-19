@@ -215,24 +215,24 @@ xButtons
   font-size: 1.4rem;
   font-family: "Galindo", cursive;
   color: #F1A930;
-  text-shadow: -1px 1px 2px black, 1px 1px 2px black, 1px -1px 0 black, -1px -1px 0 black;
   padding: .6em 2.2em;
   cursor: pointer;
   background: #240047; }
-  .btn:hover {
-    box-shadow: -2px 2px 5px 0px #888888; }
   .btn:active {
     border: 4px inset #ED8F45; }
   .btn:focus {
     outline: none; }
   .no-touch .btn:hover {
-    background: #310061; }
+    background: #4b0094;
+    box-shadow: -2px 2px 5px 0px #888888; }
   .btn.btn-success {
-    background: #64997D; }
+    background: #64997D;
+    color: #ffffff; }
     .no-touch .btn.btn-success:hover {
       background: #73a38a; }
   .btn.btn-alert {
-    background: red; }
+    background: red;
+    color: #ffffff; }
     .no-touch .btn.btn-alert:hover {
       background: #ff1a1a; }
   .btn.btn-outline {
