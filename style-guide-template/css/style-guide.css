@@ -32,99 +32,6 @@ main > h1 {
 
 /* -------------------------------- 
 
-xTypography 
-
--------------------------------- */
-h1, h2 {
-  font-family: "Galindo", cursive;
-  color: #1C0021; }
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 .4em; }
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 1024px) {
-    h1 {
-      font-size: 4rem; } }
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0; }
-  @media only screen and (min-width: 768px) {
-    h2 {
-      font-size: 1.8rem;
-      margin: 1em 0 1.4em; } }
-
-section > h2::before {
-  /* number before each section title */
-  color: #d16814; }
-
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #8800a1; }
-  p a {
-    color: #240047;
-    text-decoration: underline; }
-  @media only screen and (min-width: 768px) {
-    p {
-      font-size: 1.6rem;
-      line-height: 1.6; } }
-
-/* -------------------------------- 
-
-xButtons 
-
--------------------------------- */
-.btn {
-  border: 4px outset #ED8F45;
-  box-shadow: none;
-  border-radius: .25em;
-  font-size: 1.4rem;
-  font-family: "Galindo", cursive;
-  color: #F1A930;
-  padding: .6em 2.2em;
-  cursor: pointer;
-  background: #240047; }
-  .btn:active {
-    border: 4px inset #ED8F45; }
-  .btn:focus {
-    outline: none; }
-  .no-touch .btn:hover {
-    background: #4b0094;
-    box-shadow: -2px 2px 5px 0px #888888; }
-  .btn.btn-success {
-    background: #64997D;
-    color: #ffffff; }
-    .no-touch .btn.btn-success:hover {
-      background: #73a38a; }
-  .btn.btn-alert {
-    background: red;
-    color: #ffffff; }
-    .no-touch .btn.btn-alert:hover {
-      background: #ff1a1a; }
-  .btn.btn-outline {
-    color: #F1A930;
-    background: transparent;
-    box-shadow: outset 0 0 0 1px #ED8F45; }
-    .no-touch .btn.btn-outline:hover {
-      color: #ffffff;
-      background: #240047; }
-  @media only screen and (min-width: 768px) {
-    .btn {
-      font-size: 1.6rem; } }
-
-.cd-buttons .cd-box:nth-of-type(2) span {
-  /* CSS class name color */
-  color: #F1A930; }
-
-/* -------------------------------- 
-
 xForm 
 
 -------------------------------- */
@@ -875,5 +782,98 @@ xIcons
   /* icons size */
   width: 32px;
   height: 32px; }
+
+/* -------------------------------- 
+
+xButtons 
+
+-------------------------------- */
+.btn {
+  border: 4px outset #ED8F45;
+  box-shadow: none;
+  border-radius: .25em;
+  font-size: 1.4rem;
+  font-family: "Galindo", cursive;
+  color: #F1A930;
+  padding: .6em 2.2em;
+  cursor: pointer;
+  background: #240047; }
+  .btn:active {
+    border: 4px inset #ED8F45; }
+  .btn:focus {
+    outline: none; }
+  .no-touch .btn:hover {
+    background: #4b0094;
+    box-shadow: -2px 2px 5px 0px #888888; }
+  .btn.btn-success {
+    background: #64997D;
+    color: #ffffff; }
+    .no-touch .btn.btn-success:hover {
+      background: #73a38a; }
+  .btn.btn-alert {
+    background: red;
+    color: #ffffff; }
+    .no-touch .btn.btn-alert:hover {
+      background: #ff1a1a; }
+  .btn.btn-outline {
+    color: #F1A930;
+    background: transparent;
+    box-shadow: outset 0 0 0 1px #ED8F45; }
+    .no-touch .btn.btn-outline:hover {
+      color: #ffffff;
+      background: #240047; }
+  @media only screen and (min-width: 768px) {
+    .btn {
+      font-size: 1.6rem; } }
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #F1A930; }
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1, h2 {
+  font-family: "Galindo", cursive;
+  color: #1C0021; }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 .4em; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      margin: 1em 0 1.4em; } }
+
+section > h2::before {
+  /* number before each section title */
+  color: #d16814; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #8800a1; }
+  p a {
+    color: #240047;
+    text-decoration: underline; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
 
 /*# sourceMappingURL=style-guide.css.map */
