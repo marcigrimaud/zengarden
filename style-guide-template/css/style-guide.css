@@ -621,33 +621,33 @@ section {
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
   background: #240047; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-    background: #310061; }
+    background: #1C0021; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-    background: #17002e; }
+    background: #310061; }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #1C0021; }
-  .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-    background: #32003b; }
-  .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-    background: #060008; }
-.cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #F1A930; }
-  .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-    background: #f3b348; }
-  .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
     background: #ef9f18; }
-.cd-colors li:nth-of-type(4) .cd-color-swatch {
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
+    background: #FECC6D; }
+.cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #ED8F45; }
-  .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+  .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
     background: #ef9d5c; }
-  .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+  .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
     background: #eb812e; }
-.cd-colors li:nth-of-type(5) .cd-color-swatch {
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #283C00; }
-  .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+  .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
     background: #395600; }
-  .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+  .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
     background: #172300; }
+.cd-colors li:nth-of-type(5) .cd-color-swatch {
+  background: #64997D; }
+  .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
+    background: #73a38a; }
+  .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
+    background: #5a8a70; }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
     width: 19%;

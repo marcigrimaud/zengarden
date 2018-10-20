@@ -460,39 +460,27 @@ section {
 		background: $color-1;
 
 		&::before {
-			background: lighten($color-1, 5%);
+			background: $color-2;
 		}
 
 		&::after {
-			background: darken($color-1, 5%);
+			background: lighten($color-1, 5%);
 		}
 	}
 
 	li:nth-of-type(2) .cd-color-swatch {
-		background: $color-2;
+		background: $color-3;
 
 		&::before {
-			background: lighten($color-2, 5%);
+			background: darken($color-3, 5%);
 		}
 
 		&::after {
-			background: darken($color-2, 5%);
+			background: $color-8;
 		}
 	}
 
 	li:nth-of-type(3) .cd-color-swatch {
-		background: $color-3;
-
-		&::before {
-			background: lighten($color-3, 5%);
-		}
-
-		&::after {
-			background: darken($color-3, 5%);
-		}
-	}
-
-	li:nth-of-type(4) .cd-color-swatch {
 		background: $color-4;
 
 		&::before {
@@ -504,7 +492,7 @@ section {
 		}
 	}
 
-	li:nth-of-type(5) .cd-color-swatch {
+	li:nth-of-type(4) .cd-color-swatch {
 		background: $color-5;
 
 		&::before {
@@ -513,6 +501,18 @@ section {
 
 		&::after {
 			background: darken($color-5, 5%);
+		}
+	}
+
+	li:nth-of-type(5) .cd-color-swatch {
+		background: $color-7;
+
+		&::before {
+			background: lighten($color-7, 5%);
+		}
+
+		&::after {
+			background: darken($color-7, 5%);
 		}
 	}
 
