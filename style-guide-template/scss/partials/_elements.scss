@@ -1,0 +1,15 @@
+/* -------------------------------- 
+
+xElements
+
+-------------------------------- */
+
+ ul {
+    list-style: url('../assets/icons/star.svg');
+}
+figure {
+    @include polaroid1;
+}
+figcaption {
+    @include polaroid2;
+}

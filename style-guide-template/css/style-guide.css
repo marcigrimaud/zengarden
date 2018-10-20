@@ -876,4 +876,23 @@ p {
       font-size: 1.6rem;
       line-height: 1.6; } }
 
+/* -------------------------------- 
+
+xElements
+
+-------------------------------- */
+ul {
+  list-style: url("../assets/icons/star.svg"); }
+
+figure {
+  width: 60%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  background-color: #ffffff; }
+
+figcaption {
+  padding: 10px 20px; }
+
 /*# sourceMappingURL=style-guide.css.map */
