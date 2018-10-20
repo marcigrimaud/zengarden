@@ -6,7 +6,17 @@ xElements
 
  .bulletStar {
     list-style: url('../assets/icons/star.svg');
+     font-size: 3rem;
 }
+.bulletStar li {
+    margin-left: 2rem;
+}
+.bulletStar span {
+    font-size: 1.4rem;
+}
+
+
+
 figure {
     @include polaroid1;
 }
