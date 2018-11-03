@@ -38,18 +38,15 @@ footer a {
 .page-wrapper {
   margin: auto;
   width: 80%;
-  background-color: white;
   padding-top: 100px;
   padding-left: 10px;
   padding-right: 10px; }
 
 .sidebar {
-  background-color: green;
+  background-color: white;
   padding: 10px; }
 
 .intro {
-  background-color: blue;
-  padding: 20px;
   display: flex;
   flex-flow: wrap;
   justify-content: center; }
@@ -65,11 +62,10 @@ footer a {
 
 .intro > div:last-child {
   flex-grow: 3;
-  background-color: pink; }
+  background-color: white; }
 
 .main {
-  background-color: red;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-flow: wrap;
   justify-content: center; }
@@ -82,7 +78,7 @@ footer a {
 .main > div:nth-child(1) {
   flex-grow: 4;
   width: 100%;
-  background-color: pink; }
+  background-color: white; }
 
 .main > div:nth-child(2) {
   flex-grow: 2;
@@ -90,12 +86,12 @@ footer a {
 
 .main > div:nth-child(3) {
   flex-grow: 2;
-  background-color: pink; }
+  background-color: white; }
 
 .main > div:nth-child(4) {
   flex-grow: 2;
   width: 100%;
-  background-color: pink; }
+  background-color: white; }
 
 @media (min-width: 90em) {
   .sidebar {
@@ -103,11 +99,6 @@ footer a {
     position: fixed;
     z-index: 0;
     left: 0;
-    top: 100px; }
-
-  .main > div:nth-child(4) {
-    flex-grow: 2;
-    width: 100%;
-    background-color: pink; } }
+    top: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

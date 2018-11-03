@@ -86,23 +86,20 @@ $break-large: 90em;
     .page-wrapper {
         margin: auto;
         width: 80%;
-        background-color: white;
+
         padding-top: 100px;
         padding-left: 10px;
         padding-right: 10px;
 
     }
     .sidebar {
-        background-color: green;
+        background-color: white;
         padding: 10px;
     }
 
 ////////////// CONTAINERS AND ITEMS //////////////
     //Intro containers
         .intro  {
-        background-color: blue;
-        padding: 20px;
-
         display: flex;
         flex-flow: wrap;
         justify-content: center;
@@ -114,12 +111,10 @@ $break-large: 90em;
             width: 200px;
         }
         .intro > div:nth-child(2) { flex-grow: 1; background-color: white;}
-        .intro > div:last-child { flex-grow: 3; background-color: pink;}
+        .intro > div:last-child { flex-grow: 3; background-color: white;}
     //Main containers
         .main {
-            background-color: red;
-            padding: 20px;
-
+            padding: 10px;
             display: flex;
             flex-flow: wrap;
             justify-content: center;
@@ -130,10 +125,10 @@ $break-large: 90em;
             margin: 10px;
             width: 200px;
         }
-        .main > div:nth-child(1) { flex-grow: 4; width: 100%; background-color: pink;}
+        .main > div:nth-child(1) { flex-grow: 4; width: 100%; background-color: white;}
         .main > div:nth-child(2) { flex-grow: 2; background-color: white;}
-        .main > div:nth-child(3) { flex-grow: 2; background-color: pink;}
-        .main > div:nth-child(4) { flex-grow: 2; width: 100%; background-color: pink;}
+        .main > div:nth-child(3) { flex-grow: 2; background-color: white;}
+        .main > div:nth-child(4) { flex-grow: 2; width: 100%; background-color: white;}
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -157,7 +152,5 @@ $break-large: 90em;
     left: 0;
     top: 100px;
     }
-
-    .main > div:nth-child(4) { flex-grow: 2; width: 100%; background-color: pink;}
     
 }
