@@ -37,22 +37,35 @@ footer a {
   margin: auto;
   width: 80%;
   background-color: white;
+  padding-top: 100px;
   padding-left: 10px;
   padding-right: 10px; }
 
 .intro {
   background-color: blue;
   padding: 10px;
-  padding-top: 100px;
-  display: grid; }
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
 
 .main {
   background-color: red;
-  padding: 10px;
-  display: grid; }
+  padding: 10px; }
 
 .sidebar {
   background-color: green;
   padding: 10px; }
+
+.intro > div {
+  padding: 10px;
+  margin: 10px; }
+
+.intro > div:first-child {
+  flex-grow: 1;
+  background-color: yellow; }
+
+.intro > div:last-child {
+  flex-grow: 3;
+  background-color: pink; }
 
 /*# sourceMappingURL=style.css.map */

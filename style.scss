@@ -28,10 +28,6 @@ $success: #64997D; // Success - Pineapple Tops
 $alert: red;  // red
 
 
-
-
-
-
 //Queiries Part 1 - Breakpoints
 $break-small: 20em;
 $break-medium: 31em;
@@ -74,7 +70,6 @@ header {
     color: white;
     text-align: center;
 }
-
 footer {
     background-color: $color-1;
     position: fixed;
@@ -84,31 +79,31 @@ footer {
     text-align: center;
 }
 footer a {color: white;}
-
-//containers
 .page-wrapper {
     margin: auto;
     width: 80%;
-    
     background-color: white;
+    padding-top: 100px;
     padding-left: 10px;
     padding-right: 10px;
-    
 }
 
+//containers
 .intro  {
     background-color: blue;
     padding: 10px;
-    padding-top: 100px;
     
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
 }
 
 .main {
     background-color: red;
     padding: 10px;
     
-    display: grid;
+    
 }
 
 .sidebar {
@@ -119,9 +114,14 @@ footer a {color: white;}
 ////////////////////
 //Items in container
 
-.intro div {
-    
+.intro > div {
+    padding: 10px;
+    margin: 10px;
+
 }
+
+.intro > div:first-child { flex-grow: 1; background-color: yellow;}
+.intro > div:last-child { flex-grow: 3; background-color: pink;}
 
 .main div {
     
@@ -136,17 +136,18 @@ footer a {color: white;}
 
 @include breakpoint(medium) {
   //medium screen code
-    .intro div {
-
-    }
-
-    .main div {
-
-    }
+   
+    
+    
+    
 
 }
 
 @include breakpoint(large) {
    //large screen code
 
+    
+    
+    
+    
 }
