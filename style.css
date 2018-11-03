@@ -6,33 +6,39 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
 /*# sourceMappingURL=style.scss.map */
+* {
+  box-sizing: border-box; }
+
 #css-zen-garden {
-  background-color: black;
-  display: flex;
-  justify-content: center; }
+  background-color: #240047; }
+
+header {
+  background-color: #240047;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  text-align: center; }
 
 .page-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 75%;
+  margin: auto;
+  width: 80%;
   background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box; }
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .intro {
   background-color: blue;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: column wrap; }
+  padding: 10px;
+  padding-top: 100px; }
 
 .main {
   background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: column wrap; }
+  padding: 10px; }
 
 .sidebar {
-  background-color: green; }
+  background-color: green;
+  padding: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,28 @@
 
 /*# sourceMappingURL=style.scss.map */
 
+// color palette - these colors will be the color swatches of the Colors section
+$color-1: #240047; // backgroundcolor - Fraction
+$color-2: #1C0021; // Body Text - Nightmare
+
+$color-3: #F1A930; // Link/Header - Golden Pineapple
+$color-8: #FECC6D; //Light Yellow
+
+$color-4: #ED8F45; // Other Link - Ripe Pineapple
+
+$color-5: #283C00; // - Unripe Green
+$color-7: #64997D; //Light Green
+
+$color-6: #ffffff; // Background for boxes - white
+
+
+// additional colors
+$success: #64997D; // Success - Pineapple Tops
+$alert: red;  // red
+
+
+
+
 
 
 //Queiries Part 1 - Breakpoints
@@ -30,45 +52,57 @@ $break-large: 60em;
     }
 }
 
-
 //General Code
 
 //Queiries Part 3
+* {
+    box-sizing: border-box;
+}
 
 //small layout code here
+//OTHER
 #css-zen-garden {
-    background-color: black;
-    display: flex;
-    justify-content: center;    
+   background-color: $color-1;
+}
+
+header {
+    background-color: $color-1;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    text-align: center;
 }
 
 //containers
 .page-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
+    margin: auto;
+    width: 80%;
+    
     background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
-.intro {
-    background-color: blue;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column wrap;
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
+
+.intro  {
+    background-color: blue;
+    padding: 10px;
+    padding-top: 100px;
+    
+}
+
 .main {
     background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column wrap;
+   padding: 10px;
     
 }
 .sidebar {
     background-color: green;
+    padding: 10px;
 }
+
 ////////////////////
 //Items in container
 
@@ -79,6 +113,11 @@ $break-large: 60em;
 .main div {
     
 }
+
+
+
+
+
 
 ////////////////////
 
