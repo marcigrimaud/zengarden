@@ -57,6 +57,7 @@ $break-large: 60em;
 //Queiries Part 3
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 //small layout code here
@@ -64,7 +65,6 @@ $break-large: 60em;
 #css-zen-garden {
    background-color: $color-1;
 }
-
 header {
     background-color: $color-1;
     position: fixed;
@@ -74,6 +74,16 @@ header {
     color: white;
     text-align: center;
 }
+
+footer {
+    background-color: $color-1;
+    position: fixed;
+    width: 100%;
+        bottom: 0;
+        right: 0;
+    text-align: center;
+}
+footer a {color: white;}
 
 //containers
 .page-wrapper {
@@ -91,13 +101,16 @@ header {
     padding: 10px;
     padding-top: 100px;
     
+    display: grid;
 }
 
 .main {
     background-color: red;
-   padding: 10px;
+    padding: 10px;
     
+    display: grid;
 }
+
 .sidebar {
     background-color: green;
     padding: 10px;

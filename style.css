@@ -7,7 +7,8 @@
 /* basic elements */
 /*# sourceMappingURL=style.scss.map */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: sans-serif; }
 
 #css-zen-garden {
   background-color: #240047; }
@@ -21,6 +22,17 @@ header {
   color: white;
   text-align: center; }
 
+footer {
+  background-color: #240047;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  text-align: center; }
+
+footer a {
+  color: white; }
+
 .page-wrapper {
   margin: auto;
   width: 80%;
@@ -31,11 +43,13 @@ header {
 .intro {
   background-color: blue;
   padding: 10px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  display: grid; }
 
 .main {
   background-color: red;
-  padding: 10px; }
+  padding: 10px;
+  display: grid; }
 
 .sidebar {
   background-color: green;
