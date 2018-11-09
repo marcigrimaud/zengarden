@@ -98,7 +98,7 @@ $break-large: 90em;
     }
 
 ////////////// CONTAINERS AND ITEMS //////////////
-    //Intro containers
+//Intro containers
         .intro  {
         display: flex;
         flex-flow: wrap;
@@ -112,7 +112,7 @@ $break-large: 90em;
         }
         .intro > div:nth-child(2) { flex-grow: 1; background-color: white;}
         .intro > div:last-child { flex-grow: 3; background-color: white;}
-    //Main containers
+//Main containers
         .main {
             padding: 10px;
             display: flex;
@@ -132,7 +132,6 @@ $break-large: 90em;
 
 
 ////////////////////////////////////////////////////////////////////////////////
-
 @include breakpoint(medium) {
   //medium screen code
    
