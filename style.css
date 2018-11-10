@@ -9,8 +9,8 @@
 header {
   background-image: url("images/LogoOnly.png");
   background-repeat: no-repeat;
-  background-position: 450px -20px;
-  background-size: 150px;
+  background-position: 20px -15px;
+  background-size: 100px;
   z-index: 1; }
 
 * {
@@ -101,6 +101,9 @@ footer a {
   background-color: white; }
 
 @media (min-width: 90em) {
+  header {
+    background-position: 450px -20px; }
+
   .sidebar {
     width: 190px;
     position: absolute;

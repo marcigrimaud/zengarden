@@ -8,6 +8,7 @@
 
 /*# sourceMappingURL=style.scss.map */
 
+//VARIABLES
 // color palette - these colors will be the color swatches of the Colors section
 $color-1: #240047; // backgroundcolor - Fraction
 $color-2: #1C0021; // Body Text - Nightmare
@@ -64,15 +65,11 @@ $break-large: 90em;
 //OTHER
 header {
     background-image: $logo;
-    background-repeat: no-repeat;
-    //background-position: center;
-    
-    background-position:  450px -20px;
-    
-    background-size:  150px;
+    background-repeat: no-repeat;   
+    background-position:  20px -15px;
+    background-size:  100px;
     
     z-index: 1;
-    
 }
 
     * {
@@ -166,6 +163,9 @@ header {
 @include breakpoint(large) {
    //large screen code
 
+    header {  
+    background-position:  450px -20px; }
+    
     .sidebar {
     width: 190px;
     position: absolute;
