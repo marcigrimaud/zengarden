@@ -7,8 +7,10 @@
 /* basic elements */
 /*# sourceMappingURL=style.scss.map */
 header {
-  image: url("images/LogoOnly.png");
-  margin-right: 200px;
+  background-image: url("images/LogoOnly.png");
+  background-repeat: no-repeat;
+  background-position: 450px -20px;
+  background-size: 150px;
   z-index: 1; }
 
 * {
@@ -33,7 +35,7 @@ footer {
   text-align: center;
   position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   z-index: 1; }
 
@@ -101,9 +103,19 @@ footer a {
 @media (min-width: 90em) {
   .sidebar {
     width: 190px;
-    position: fixed;
+    position: absolute;
     z-index: 0;
     left: 0;
-    top: 100px; } }
+    top: 100px; }
+
+  div, #zen-summary {
+    margin-left: 50px; }
+
+  .wrapper {
+    margin: 0; }
+
+  footer {
+    padding: 10px;
+    padding-top: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

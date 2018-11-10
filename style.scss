@@ -22,11 +22,20 @@ $color-7: #64997D; //Light Green
 
 $color-6: #ffffff; // Background for boxes - white
 
-
 // additional colors
 $success: #64997D; // Success - Pineapple Tops
 $alert: red;  // red
 
+//Images
+$logo: url("images/LogoOnly.png");
+$background: url("images/background.png");
+$astronaut: url('images/astronaut-ingravity.svg');
+$world: url("images/worldwide.svg");
+$rocketlaunch: url("images/rocket-launch.svg");
+$rocketfly: url("images/rocket-ship.svg");
+$saturn: url("images/saturn.svg");
+$threestar: url("images/3star.svg");
+$star: url("images/star.svg");
 
 //Queiries Part 1 - Breakpoints
 $break-small: 20em;
@@ -54,10 +63,13 @@ $break-large: 90em;
 //small layout code here
 //OTHER
 header {
-    image: url("images/LogoOnly.png");
-    im-repeat: no-repeat;
-    background-position: center;
-    margin-right: 200px;
+    background-image: $logo;
+    background-repeat: no-repeat;
+    //background-position: center;
+    
+    background-position:  450px -20px;
+    
+    background-size:  150px;
     
     z-index: 1;
     
@@ -88,11 +100,12 @@ header {
         
         position: fixed;
         width: 100%;
-            bottom: 0;
+            bottom: 0px;
             right: 0;
         z-index: 1;
     }
-    footer a {color: white;}
+        footer a {color: white;}
+
     .page-wrapper {
         margin: auto;
         width: 80%;
@@ -152,14 +165,23 @@ header {
 ////////////////////////////////////////////////////////////////////////////////
 @include breakpoint(large) {
    //large screen code
-    
-     .sidebar {
+
+    .sidebar {
     width: 190px;
-    position: fixed;
+    position: absolute;
     z-index: 0;
    
     left: 0;
     top: 100px;
     }
     
+    div, #zen-summary {
+        margin-left: 50px;
+        
+    }
+
+    .wrapper { margin: 0;}
+    footer {padding: 10px;
+        padding-top: 15px;
+    }
 }
