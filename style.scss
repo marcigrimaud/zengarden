@@ -53,6 +53,16 @@ $break-large: 90em;
 //Queiries Part 3
 //small layout code here
 //OTHER
+header {
+    image: url("images/LogoOnly.png");
+    im-repeat: no-repeat;
+    background-position: center;
+    margin-right: 200px;
+    
+    z-index: 1;
+    
+}
+
     * {
     box-sizing: border-box;
     font-family: sans-serif;
