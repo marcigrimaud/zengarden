@@ -100,9 +100,14 @@ footer a {
   width: 100%;
   background-color: white; }
 
+@media (min-width: 31em) {
+  header {
+    background-position: 200px -10px;
+    background-size: 100px;
+    z-index: 1; } }
 @media (min-width: 90em) {
   header {
-    background-position: 450px -20px; }
+    background-position: 540px -10px; }
 
   .sidebar {
     width: 190px;
