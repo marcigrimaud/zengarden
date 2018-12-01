@@ -1,0 +1,84 @@
+@import 'image-variable.scss';
+@import 'color-variable.scss';
+ 
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    #css-zen-garden {
+        background-image: $background;
+    }
+    header {
+        background-image: $background;
+        background-repeat: no-repeat;   
+    z-index: 1;
+        width: 100%;
+        left: 0;
+        top: 0;
+        color: white;
+        text-align: center;
+        
+        position: fixed;
+        z-index: 1;
+    
+    }
+    footer {
+        background-image: $background;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+            bottom: 0px;
+            right: 0;
+        z-index: 1;
+    }
+        footer a {color: white;}
+
+    .page-wrapper {
+        margin: auto;
+        width: 80%;
+
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    .sidebar {
+        background-color: white;
+        padding: 10px;
+    }
+
+////////////// CONTAINERS AND ITEMS //////////////
+//Intro containers
+        .intro  {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    //Intro Items
+        .intro > div {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        .intro > div:nth-child(2) { flex-grow: 1; background-color: white;}
+        .intro > div:last-child { flex-grow: 3; background-color: white;}
+//Main containers
+        .main {
+            padding: 10px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+        }
+    //Main Items
+        .main > div {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        .main > div:nth-child(1) { flex-grow: 4; width: 100%; background-color: white;}
+        .main > div:nth-child(2) { flex-grow: 2; background-color: white;}
+        .main > div:nth-child(3) { flex-grow: 2; background-color: white;}
+        .main > div:nth-child(4) { flex-grow: 2; width: 100%; background-color: white;}
+

@@ -1,0 +1,10 @@
+@import 'image-variable.scss';
+@import 'color-variable.scss';
+
+
+header {   
+    background-position:  200px -10px;
+    background-size:  100px;
+    
+    z-index: 1;
+}

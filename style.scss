@@ -1,42 +1,11 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-/* basic elements */
+@import url('https://fonts.googleapis.com/css?family=Galindo|K2D');
+@import url('https://fonts.googleapis.com/css?family=K2D');
+    
+@import 'image-variable.scss';
+@import 'color-variable.scss';
 
-/*# sourceMappingURL=style.scss.map */
-
-//VARIABLES
-// color palette - these colors will be the color swatches of the Colors section
-$color-1: #240047; // backgroundcolor - Fraction
-$color-2: #1C0021; // Body Text - Nightmare
-
-$color-3: #F1A930; // Link/Header - Golden Pineapple
-$color-8: #FECC6D; //Light Yellow
-
-$color-4: #ED8F45; // Other Link - Ripe Pineapple
-
-$color-5: #283C00; // - Unripe Green
-$color-7: #64997D; //Light Green
-
-$color-6: #ffffff; // Background for boxes - white
-
-// additional colors
-$success: #64997D; // Success - Pineapple Tops
-$alert: red;  // red
-
-//Images
-$logo: url("images/LogoOnly.png");
-$background: url("images/background.png");
-$astronaut: url('images/astronaut-ingravity.svg');
-$world: url("images/worldwide.svg");
-$rocketlaunch: url("images/rocket-launch.svg");
-$rocketfly: url("images/rocket-ship.svg");
-$saturn: url("images/saturn.svg");
-$threestar: url("images/3star.svg");
-$star: url("images/star.svg");
+$bodytext: 'K2D', sans-serif;
+$headertext: 'Galindo', cursive;
 
 //Queiries Part 1 - Breakpoints
 $break-small: 20em;
@@ -58,29 +27,26 @@ $break-large: 90em;
     }
 }
 
-//General Code
-
-//Queiries Part 3
 //small layout code here
-//OTHER
-header {
-    background-image: $logo;
-    background-repeat: no-repeat;   
-    background-position:  20px -15px;
-    background-size:  100px;
-    
-    z-index: 1;
-}
 
+////////// MAIN BODY OF CODE /////
     * {
-    box-sizing: border-box;
-    font-family: sans-serif;
+        box-sizing: border-box;
     }
+    h1, h2, h3,h4, h5,h6 {
+        font-family: $headertext;
+        text-align: center;
+    }
+
     #css-zen-garden {
-       background-color: $color-1;
+        background-image: $background;
+        font-family: $bodytext;
     }
+
     header {
-        background-color: $color-1;
+        background-image: $background;
+        background-repeat: no-repeat;   
+        z-index: 1;
         width: 100%;
         left: 0;
         top: 0;
@@ -91,17 +57,18 @@ header {
         z-index: 1;
     
     }
+
     footer {
-        background-color: $color-1;
+        background-image: $background;
         text-align: center;
-        
+        padding: 10px;
         position: fixed;
         width: 100%;
             bottom: 0px;
             right: 0;
         z-index: 1;
     }
-        footer a {color: white;}
+    footer a {color: white;}
 
     .page-wrapper {
         margin: auto;
@@ -112,13 +79,8 @@ header {
         padding-right: 10px;
 
     }
-    .sidebar {
-        background-color: white;
-        padding: 10px;
-    }
-
-////////////// CONTAINERS AND ITEMS //////////////
-//Intro containers
+/////Main Content design for Boxes///////
+//Intro - Header and boxes for Summary and Preamble
         .intro  {
         display: flex;
         flex-flow: wrap;
@@ -130,9 +92,15 @@ header {
             margin: 10px;
             width: 200px;
         }
-        .intro > div:nth-child(2) { flex-grow: 1; background-color: white;}
-        .intro > div:last-child { flex-grow: 3; background-color: white;}
-//Main containers
+        .intro > div:nth-child(2) { 
+            flex-grow: 1; 
+            background-color: white;}
+
+        .intro > div:last-child { 
+            flex-grow: 3; 
+            background-color: white;}
+
+//main class - explanation, participation, requirements, and footer
         .main {
             padding: 10px;
             display: flex;
@@ -145,13 +113,30 @@ header {
             margin: 10px;
             width: 200px;
         }
-        .main > div:nth-child(1) { flex-grow: 4; width: 100%; background-color: white;}
-        .main > div:nth-child(2) { flex-grow: 2; background-color: white;}
-        .main > div:nth-child(3) { flex-grow: 2; background-color: white;}
-        .main > div:nth-child(4) { flex-grow: 2; width: 100%; background-color: white;}
+        .main > div:nth-child(1) { 
+            flex-grow: 4; 
+            width: 100%; 
+            background-color: white;}
+        .main > div:nth-child(2) { 
+            flex-grow: 2; 
+            background-color: white;}
+        .main > div:nth-child(3) { 
+            flex-grow: 2; 
+            background-color: white;}
+        .main > div:nth-child(4) { 
+            flex-grow: 2; 
+            width: 100%; 
+            background-color: white;}
+
+//sidebar - selection, archives and resources
+    .sidebar {
+        background-color: white;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
 
 
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////
 @include breakpoint(medium) {
   //medium screen code
    
@@ -160,33 +145,45 @@ header {
     background-size:  100px;
     
     z-index: 1;
-}
+       
+    }
     
-
+    header {
+        background-image: $background;
+        background-repeat: repeat;   
+        width: 100%;
+    }
+        
 }
-////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////
 @include breakpoint(large) {
    //large screen code
+    
+    div, #zen-summary {
+        margin-left: 50px;
+    }
 
-    header {  
-    background-position:  540px -10px; }
+    .sidebar .wrapper { 
+        margin: 0;
+        margin-left: -50px;
+    }
     
     .sidebar {
     width: 190px;
     position: absolute;
     z-index: 0;
-   
+    
     left: 0;
     top: 100px;
-    }
-    
-    div, #zen-summary {
-        margin-left: 50px;
         
+    padding: 20px;
+    padding-top: 20px;
     }
 
-    .wrapper { margin: 0;}
-    footer {padding: 10px;
+    footer {
+        padding: 10px;
         padding-top: 15px;
     }
+    
 }

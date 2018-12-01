@@ -1,0 +1,25 @@
+@import 'image-variable.scss';
+@import 'color-variable.scss';
+  
+
+header {  
+    background-position:  540px -10px; }
+    
+    .sidebar {
+    width: 190px;
+    position: absolute;
+    z-index: 0;
+   
+    left: 0;
+    top: 100px;
+    }
+    
+    div, #zen-summary {
+        margin-left: 50px;
+        
+    }
+
+    .wrapper { margin: 0;}
+    footer {padding: 10px;
+        padding-top: 15px;
+    }
