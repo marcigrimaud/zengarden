@@ -1,15 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Galindo|K2D");
 @import url("https://fonts.googleapis.com/css?family=K2D");
-* {
-  box-sizing: border-box; }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Galindo", cursive;
+  color: #F1A930;
   text-align: center; }
 
 #css-zen-garden {
   background-image: url("images/spacebackground.gif");
-  font-family: "K2D", sans-serif; }
+  font-family: "K2D", sans-serif;
+  text-align: center; }
+
+header h1 {
+  color: white; }
+
+header h2 {
+  color: white; }
+
+.sidebar {
+  text-align: left; }
+
+/* unvisited link */
+a:link {
+  color: #64997D; }
+
+/* visited link */
+a:visited {
+  color: #283C00; }
+
+/* mouse over link */
+a:hover {
+  color: #ED8F45; }
+
+* {
+  box-sizing: border-box; }
 
 header {
   background-image: url("images/spacebackground.gif");
@@ -18,23 +41,9 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  color: white;
   text-align: center;
   position: fixed;
   z-index: 1; }
-
-footer {
-  background-image: url("images/spacebackground.gif");
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  right: 0;
-  z-index: 1; }
-
-footer a {
-  color: white; }
 
 .page-wrapper {
   margin: auto;
@@ -95,6 +104,34 @@ footer a {
   padding: 20px;
   padding-bottom: 30px; }
 
+.sidebar ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0; }
+
+footer {
+  background-image: url("images/spacebackground.gif");
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  right: 0;
+  z-index: 1; }
+
+footer a {
+  color: white;
+  text-decoration: none; }
+
+footer a:visited {
+  color: #ED8F45; }
+
+footer a:hover {
+  color: #F1A930; }
+
+footer a:active {
+  color: #FECC6D; }
+
 @media (min-width: 31em) {
   header {
     background-position: 200px -10px;
@@ -104,7 +141,13 @@ footer a {
   header {
     background-image: url("images/spacebackground.gif");
     background-repeat: repeat;
-    width: 100%; } }
+    width: 100%; }
+
+  .sidebar nav, .design-archives nav, .zen-resources ul {
+    width: 50%;
+    margin: auto;
+    padding: auto;
+    padding-left: 5em; } }
 @media (min-width: 90em) {
   div, #zen-summary {
     margin-left: 50px; }
@@ -122,8 +165,21 @@ footer a {
     padding: 20px;
     padding-top: 20px; }
 
+  .sidebar h3 {
+    text-align: left;
+    padding-left: 20px; }
+
   footer {
     padding: 10px;
-    padding-top: 15px; } }
+    padding-top: 15px; }
+
+  .zen-resources ul li {
+    padding-left: 20px; }
+
+  .sidebar nav, .design-archives nav, .zen-resources ul {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    padding-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

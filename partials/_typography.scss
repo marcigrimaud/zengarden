@@ -1,0 +1,27 @@
+$bodytext: 'K2D', sans-serif;
+$headertext: 'Galindo', cursive;
+
+    h1, h2, h3,h4, h5,h6 {
+        font-family: $headertext;
+        color: $color-3;
+        text-align: center;
+    }
+
+    #css-zen-garden {
+        background-image: $background;
+        font-family: $bodytext;
+        text-align: center;
+    }
+
+header h1 {
+    color: white;
+}
+
+header h2 {
+    color: white;
+}
+
+//sidebar - selection, archives and resources
+.sidebar {
+    text-align: left;
+}

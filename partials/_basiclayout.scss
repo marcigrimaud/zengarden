@@ -1,0 +1,86 @@
+* {
+        box-sizing: border-box;
+    }
+
+    header {
+        background-image: $background;
+        background-repeat: no-repeat;   
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .page-wrapper {
+        margin: auto;
+        width: 80%;
+
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+/////Main Content design for Boxes///////
+//Intro - Header and boxes for Summary and Preamble
+        .intro  {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    //Intro Items
+        .intro > div {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        .intro > div:nth-child(2) { 
+            flex-grow: 1; 
+            background-color: white;}
+
+        .intro > div:last-child { 
+            flex-grow: 3; 
+            background-color: white;}
+
+//main class - explanation, participation, requirements, and footer
+        .main {
+            padding: 10px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+        }
+    //Main Items
+        .main > div {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        .main > div:nth-child(1) { 
+            flex-grow: 4; 
+            width: 100%; 
+            background-color: white;}
+        .main > div:nth-child(2) { 
+            flex-grow: 2; 
+            background-color: white;}
+        .main > div:nth-child(3) { 
+            flex-grow: 2; 
+            background-color: white;}
+        .main > div:nth-child(4) { 
+            flex-grow: 2; 
+            width: 100%; 
+            background-color: white;}
+
+//sidebar - selection, archives and resources
+    .sidebar {
+        background-color: white;
+        padding: 20px;
+        padding-bottom: 30px;
+        
+    }
+.sidebar ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    
+}

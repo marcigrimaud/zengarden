@@ -1,0 +1,44 @@
+@include breakpoint(large) {
+   //large screen code
+    
+    div, #zen-summary {
+        margin-left: 50px;
+    }
+
+    .sidebar .wrapper { 
+        margin: 0;
+        margin-left: -50px;
+    }
+    
+    .sidebar {
+        width: 190px;
+        position: absolute;
+        z-index: 0;
+        
+        left: 0;
+        top: 100px;
+
+        padding: 20px;
+        padding-top: 20px;
+    }
+    
+    .sidebar h3{ text-align: left; padding-left: 20px;}
+
+    footer {
+        padding: 10px;
+        padding-top: 15px;
+    }
+    .zen-resources ul li {
+        padding-left: 20px;
+        
+    }
+    
+    .sidebar nav , .design-archives nav , .zen-resources ul {
+       width: 100%;
+        margin: auto;
+        padding: auto;
+        padding-left: 0;
+    }
+    
+    
+}

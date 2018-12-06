@@ -1,0 +1,27 @@
+@include breakpoint(medium) {
+  //medium screen code
+   
+   header {   
+    background-position:  200px -10px;
+    background-size:  100px;
+    
+    z-index: 1;
+       
+    }
+    
+    header {
+        background-image: $background;
+        background-repeat: repeat;   
+        width: 100%;
+    }
+    
+    .sidebar nav , .design-archives nav , .zen-resources ul {
+       width: 50%;
+        margin: auto;
+        padding: auto;
+        padding-left: 5em;
+    }
+    
+    
+    
+}
