@@ -123,7 +123,7 @@ h2:hover {
 .sidebar {
   background-color: white;
   padding: 20px;
-  padding-bottom: 30px; }
+  padding-bottom: 50px; }
 
 .sidebar ul {
   list-style-type: none;
@@ -131,7 +131,7 @@ h2:hover {
   padding: 0;
   margin: 0;
   width: 120%;
-  margin-left: -70px; }
+  margin-left: -20px; }
 
 .resources ul {
   padding-bottom: 50px; }
@@ -177,18 +177,13 @@ footer a:active {
   .sidebar nav, .design-archives nav, .zen-resources ul {
     width: 50%;
     margin: auto;
-    padding: auto;
+    padding: 0;
     padding-left: 5em; }
 
   .intro header {
     background-repeat: no-repeat;
     background-position: 30% 5%;
-    background-size: 12%; }
-
-  .sidebar ul {
-    width: 120%;
-    margin-left: -10px;
-    text-align: left; } }
+    background-size: 12%; } }
 @media (min-width: 90em) {
   div, #zen-summary {
     margin-left: 50px; }
@@ -220,11 +215,14 @@ footer a:active {
   .sidebar nav, .design-archives nav, .zen-resources ul {
     width: 100%;
     margin: auto;
-    padding: auto;
+    padding: 0;
     padding-left: 0; }
 
   .intro header {
     background-position: 38% 50%;
-    background-size: 8%; } }
+    background-size: 8%; }
+
+  .sidebar ul {
+    margin-left: -50px; } }
 
 /*# sourceMappingURL=style.css.map */
