@@ -45,10 +45,31 @@ header {
   position: fixed;
   z-index: 1; }
 
+.intro header {
+  background-color: #240047;
+  background-image: url(images/SpacePineappleLogo-06.svg);
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
+  background-size: 25%; }
+
+h3, h1, h2 {
+  -webkit-transition: font-size 3s;
+  /* For Safari 3.1 to 6.0 */
+  transition: font-size 3s; }
+
+h3:hover {
+  font-size: 25px; }
+
+h1:hover {
+  font-size: 35px; }
+
+h2:hover {
+  font-size: 30px; }
+
 .page-wrapper {
   margin: auto;
   width: 80%;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-left: 10px;
   padding-right: 10px; }
 
@@ -107,7 +128,17 @@ header {
 .sidebar ul {
   list-style-type: none;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  margin: 0;
+  width: 120%;
+  margin-left: -70px; }
+
+.resources ul {
+  padding-bottom: 50px; }
+
+.sidebar ul li {
+  padding-left: 20%;
+  padding-right: 20%; }
 
 footer {
   background-image: url("images/spacebackground.gif");
@@ -147,7 +178,17 @@ footer a:active {
     width: 50%;
     margin: auto;
     padding: auto;
-    padding-left: 5em; } }
+    padding-left: 5em; }
+
+  .intro header {
+    background-repeat: no-repeat;
+    background-position: 30% 5%;
+    background-size: 12%; }
+
+  .sidebar ul {
+    width: 120%;
+    margin-left: -10px;
+    text-align: left; } }
 @media (min-width: 90em) {
   div, #zen-summary {
     margin-left: 50px; }
@@ -180,6 +221,10 @@ footer a:active {
     width: 100%;
     margin: auto;
     padding: auto;
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .intro header {
+    background-position: 38% 50%;
+    background-size: 8%; } }
 
 /*# sourceMappingURL=style.css.map */
